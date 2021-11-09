@@ -4,8 +4,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/fanboykun/decissionsupportsystem.svg?style=flat-square)](https://packagist.org/packages/fanboykun/decissionsupportsystem)
 ![GitHub Actions](https://github.com/fanboykun/decissionsupportsystem/actions/workflows/main.yml/badge.svg) -->
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
-
+This is a laravel package to do certain method of Decision Support System. make sure to always use latest version of Laravel, and minimum PHP version is 7.4.
 
 
 
@@ -30,7 +29,7 @@ and then use it as a parameter on your function, example :
 public function calculate (DecissionSupportSystem $decissionSupportSystem)
 {
     // for example, let's use moora as the method, you can choose what method you want to use, method list and the function are available below
-    $result = $decissionSupportSystem->mooraService($your_data_to_calculate);
+    $result = $decissionSupportSystem->mooraOperator($your_data_to_calculate);
 
     return $result;
 }
@@ -41,7 +40,7 @@ public function calculate ()
 {
     // for example, let's use moora as the method, you can choose what method you want to use, method list and the function are available below
     $decissionSupportSystem = new DecissionSupportSystem();
-    $result = $decissionSupportSystem->mooraService($your_data_to_calculate);
+    $result = $decissionSupportSystem->mooraOperator($your_data_to_calculate);
 
     return $result;
 }
@@ -96,12 +95,12 @@ If you are still confuse about the many to many relationship, make sure to read 
 
 - waspas :
 ```php
-waspasService()
+waspasOperator()
 ```
 
 - moora :
 ```php
-mooraService()
+mooraOperator()
 ```
 
 remember that you have to use the ``` DecissionSupportSystem ``` class, either from your function as a parameter or make a new class instance inside your function.
