@@ -21,7 +21,7 @@ you don't have to configure anything, it's ready to use as it functionality is o
 ## Usage
 import the class on your controller
 ```php
-use Fanboykun\DecissionSuppportSystem;
+use Fanboykun\DecissionSuppportSystem\DecissionSuppportSystem;
 ```
 and then use it as a parameter on your function, example :
 
@@ -83,7 +83,7 @@ $returned_data = [
     })->toArray();
 
     // example, we use moora method
-    $result = $decissionSupportSystem->mooraService($data_to_calculate);
+    $result = $decissionSupportSystem->mooraOperator($data_to_calculate);
 
     return $result;
 }
