@@ -48,14 +48,14 @@ public function calculate ()
 NOTE: the returned data type is array and the data that returned is like this example :
 ```php
 $returned_data = [
-    ['alternative_id' => 1, 'result' => 0.9, 'rank' => 1,],
-    ['alternative_id' => 2, 'result' => 0.8, 'rank' => 2,],
-    ['alternative_id' => 3, 'result' => 0.6, 'rank' => 3,],
-    ['alternative_id' => 4, 'result' => 0.5, 'rank' => 4,],
-    ['alternative_id' => 5, 'result' => 0.4, 'rank' => 5,],
+    ['alternative_id' => 1, 'optimized_value' => 0.9, 'rank' => 1,],
+    ['alternative_id' => 2, 'optimized_value' => 0.8, 'rank' => 2,],
+    ['alternative_id' => 3, 'optimized_value' => 0.6, 'rank' => 3,],
+    ['alternative_id' => 4, 'optimized_value' => 0.5, 'rank' => 4,],
+    ['alternative_id' => 5, 'optimized_value' => 0.4, 'rank' => 5,],
 ]
 ```
- the key of an index is ```alternative_id ```, and sorted by value of ```result```, and add an index named ```rank```.
+ the key of an index is ```alternative_id ```, and sorted by value of ```optimized_value```, and add an index named ```rank```.
 
  ## Required Data
  here is the example of the data that required and accepted, make sure to follow this step because in order to read and calculate the data, it depends on the array index name. you may have different index name so you have to map it's name and value.
