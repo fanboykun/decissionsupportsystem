@@ -91,6 +91,22 @@ $returned_data = [
 in above example, we are getting data from the database with eloquent, we get the data from ```Criteria``` model that have ``` ManyToMany ``` relationship with ```Alternative``` model.
 If you are still confuse about the many to many relationship, make sure to read the Laravel documentation.
 
+## Acceptable Data Types
+From above explaination, we know the required data to pass. Here i going to show you the data type(s)
+
+| Column                 | Data Types | Description |
+|------------------------|------------|-------------|
+| criteria_id            | integer    | it should be unique (id)
+| name                   | string     | it is not used to begin any operation, but it's required
+| type                   | boolean    | true is cost and false is benefit
+| weight                 | float      | better to pass it as float, but it's accept any numeric value
+| max_value              | float      | it's not required, when it's null. this package will search the max value
+| alternatives           | array      | it is an array wrapper for the alternative
+| alternative_id         | integer    | it should be unique (id)
+| name                   | string     | it is not used to begin any operation, but it's required
+| value                  | float      | better to pass it as float, but it's accept any numeric value
+
+
 ## Available Method and It's Function
 
 - waspas :
